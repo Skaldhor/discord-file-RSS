@@ -5,8 +5,8 @@ param(
     [Parameter(Mandatory=$true, HelpMessage="Full path to where the RSS xml file gets saved.")] [string]$RssFilePath,
     [Parameter(Mandatory=$true, HelpMessage="The name for your RSS channel.")] [string]$RssChannel,
     [Parameter(Mandatory=$true, HelpMessage="List of Discord channelIDs to query for messages.")] [array]$ChannelIds,
-    [Parameter(Mandatory=$true, HelpMessage="Full path to where the RSS xml file gets saved.")] [string]$AuthToken,
-    [Parameter(Mandatory=$false, HelpMessage="List of Discord channelIDs to query for messages.")] [array]$FilterFileTypes
+    [Parameter(Mandatory=$true, HelpMessage="Your personal Discord auth token.")] [string]$AuthToken,
+    [Parameter(Mandatory=$false, HelpMessage="List of file types you want to filter for, for example 'pdf' or 'jpg'.")] [array]$FilterFileTypes
 )
 
 # --- script ---
